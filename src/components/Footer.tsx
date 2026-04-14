@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
-import Image from "next/image";
+
 
 function Countdown() {
   const [timeLeft, setTimeLeft] = useState({
@@ -234,7 +234,7 @@ export default function Footer() {
                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                className="font-serif text-lg md:text-xl text-[var(--color-ivory)] italic tracking-widest drop-shadow-lg p-4 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm shadow-xl"
             >
-              "Made by bride's brother with lot's of love"
+              &quot;Made by bride&apos;s brother with lot&apos;s of love&quot;
               <motion.span 
                 animate={{ scale: [1, 1.4, 1] }} 
                 transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}

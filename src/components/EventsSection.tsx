@@ -28,7 +28,15 @@ const events = [
   },
 ];
 
-function EventCard({ event, index }: { event: any; index: number }) {
+interface EventData {
+  name: string;
+  date: string;
+  time: string;
+  venue: string;
+  color: string;
+}
+
+function EventCard({ event }: { event: EventData }) {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -170,8 +178,8 @@ export default function EventsSection() {
           style={{ x }}
           className="flex gap-8 md:gap-20 px-[5vw] pt-32 pb-16 items-center h-[75vh]"
         >
-          {events.map((event, index) => (
-            <EventCard key={event.name} event={event} index={index} />
+          {events.map((event) => (
+            <EventCard key={event.name} event={event} />
           ))}
         </motion.div>
       </div>

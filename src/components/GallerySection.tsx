@@ -98,7 +98,7 @@ export default function GallerySection() {
             <h2 className="font-serif text-5xl md:text-7xl text-[var(--color-gold)] mb-6 drop-shadow-xl">Capturing Moments</h2>
             <div className="w-24 h-px bg-[var(--color-gold)] mx-auto mb-8"></div>
             <p className="font-sans text-[var(--color-ivory)] max-w-xl mx-auto opacity-80 tracking-wide">
-              Glimpses of love, laughter, and the beautiful memories we've created together.
+              Glimpses of love, laughter, and the beautiful memories we&apos;ve created together.
             </p>
           </motion.div>
         </div>

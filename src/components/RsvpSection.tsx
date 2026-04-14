@@ -63,7 +63,7 @@ export default function RsvpSection() {
                     </svg>
                   </div>
                   <h3 className="font-serif text-3xl text-[var(--color-maroon)] mb-2">Thank You!</h3>
-                  <p className="text-gray-600 font-sans">Your response has been recorded. We can't wait to see you!</p>
+                  <p className="text-gray-600 font-sans">Your response has been recorded. We can&apos;t wait to see you!</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
