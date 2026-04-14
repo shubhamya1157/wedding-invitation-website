@@ -67,8 +67,6 @@ export default function CustomCursor() {
         animate={{
           scale: isHovered ? 2.5 : 1,
           opacity: 1,
-          x: cursorXSpring,
-          y: cursorYSpring,
         }}
         transition={{ scale: { duration: 0.2 }, opacity: { duration: 0.2 } }}
       />
