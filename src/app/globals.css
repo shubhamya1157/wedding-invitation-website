@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFF8E7;
+  --foreground: #6A040F;
+  --color-maroon: #6A040F; /* Rich Wine / Maroon */
+  --color-gold: #FFBA08; /* Vibrant Golden Yellow */
+  --color-ivory: #FFF8E7; /* Warm Cream / Ivory */
+  --color-saffron: #F48C06; /* Vibrant Orange */
+  --color-emerald: #2D6A4F; /* Royal Green */
+  --color-blue: #1D3557; /* Deep Blue */
+  --color-red: #D00000; /* Festive Red */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-maroon: var(--color-maroon);
+  --color-gold: var(--color-gold);
+  --color-ivory: var(--color-ivory);
+  --color-saffron: var(--color-saffron);
+  --color-emerald: var(--color-emerald);
+  --color-blue: var(--color-blue);
+  --color-red: var(--color-red);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Lenis Smooth Scroll Styles */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
