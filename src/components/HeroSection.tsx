@@ -3,7 +3,7 @@
 import { useRef, useMemo, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import * as THREE from "three";
@@ -91,7 +91,7 @@ export default function HeroSection() {
 
   const titleWords = "Prabhat & Shefali".split(" ");
 
-  const titleVariant = {
+  const titleVariant: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -102,7 +102,7 @@ export default function HeroSection() {
     },
   };
 
-  const wordVariant = {
+  const wordVariant: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
