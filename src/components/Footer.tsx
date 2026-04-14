@@ -112,6 +112,7 @@ function Countdown() {
   );
 }
 
+/* eslint-disable @next/next/no-img-element */
 export default function Footer() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 
+/* eslint-disable @next/next/no-img-element */
 export default function IntroductionSection() {
   return (
     <section className="bg-[var(--background)] py-24 relative overflow-hidden">
